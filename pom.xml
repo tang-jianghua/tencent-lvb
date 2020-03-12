@@ -2,13 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.tangjianghua</groupId>
+	<groupId>com.github.tangjianghua</groupId>
 	<artifactId>tencentlvb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>tencentlvb</name>
 	<packaging>jar</packaging>
 	<description>腾讯标准直播（原云直播）集成sdk</description>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
 
+	<developers>
+		<developer>
+			<name>tangjianghua</name>
+			<email>379170882@qq.com</email>
+			<url>https://github.com/tang-jianghua/tencent-lvb</url>
+		</developer>
+	</developers>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
