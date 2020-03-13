@@ -1,64 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.tangjianghua</groupId>
-	<artifactId>tencentlvb</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>tencentlvb</name>
-	<packaging>jar</packaging>
-	<description>腾讯标准直播（原云直播）集成sdk</description>
-	<parent>
-		<groupId>org.sonatype.oss</groupId>
-		<artifactId>oss-parent</artifactId>
-		<version>7</version>
-	</parent>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.tang-jianghua</groupId>
+    <artifactId>tencentlvb</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>tencentlvb</name>
+    <packaging>jar</packaging>
+    <description>腾讯标准直播（原云直播）集成sdk</description>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+<!--    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>-->
+    <scm>
+        <tag>master</tag>
+        <url>https://github.com/tang-jianghua/tencent-lvb</url>
+        <connection>scm:git:git@github.com:tang-jianghua/tencent-lvb.git</connection>
+        <developerConnection>scm:git:git@github.com:tang-jianghua/tencent-lvb.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <name>tangjianghua</name>
+            <email>379170882@qq.com</email>
+            <url>https://github.com/tang-jianghua/tencent-lvb</url>
+        </developer>
+    </developers>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.tencentcloudapi/tencentcloud-sdk-java -->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+    </dependencies>
 
-	<developers>
-		<developer>
-			<name>tangjianghua</name>
-			<email>379170882@qq.com</email>
-			<url>https://github.com/tang-jianghua/tencent-lvb</url>
-		</developer>
-	</developers>
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
-
-	<dependencies>
-		<!-- https://mvnrepository.com/artifact/com.tencentcloudapi/tencentcloud-sdk-java -->
-		<dependency>
-			<groupId>com.tencentcloudapi</groupId>
-			<artifactId>tencentcloud-sdk-java</artifactId>
-			<version>3.1.0</version>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<finalName>tencentlvb</finalName>
-
-	<plugins>
-	<!-- 配置资源文件插件-->
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-resources-plugin</artifactId>
-			<version>2.5</version>
-			<configuration>
-				<encoding>UTF-8</encoding>
-			</configuration>
-		</plugin>
-		<!-- 配置编译插件-->
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>2.5</version>
-			<configuration>
-				<source>1.8</source>
-				<target>1.8</target>
-				<encoding>UTF-8</encoding>
-			</configuration>
-		</plugin>
-		</plugins>
-	</build>
+    <profiles>
+        <profile>
+            <id>release</id>
+            <distributionManagement>
+                <repository>
+                    <id>Releases</id>
+                    <name>Releases</name>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+                </repository>
+                <snapshotRepository>
+                    <id>Snapshots</id>
+                    <name>Snapshots</name>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+    </profiles>
+    <build>
+        <finalName>tencentlvb</finalName>
+    </build>
 
 </project>
