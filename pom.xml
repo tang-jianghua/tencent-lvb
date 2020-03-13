@@ -124,8 +124,14 @@
             <!-- Javadoc -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
+                <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.9.1</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <aggregate>true</aggregate>
+                    <charset>UTF-8</charset>
+                    <docencoding>UTF-8</docencoding>
+                </configuration>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -133,9 +139,9 @@
                         <goals>
                             <goal>jar</goal>
                         </goals>
-                        <configuration>
-                            <additionalparam>-Xdoclint:none</additionalparam>
-                        </configuration>
+                        <!-- <configuration>
+                             <additionalparam>-Xdoclint:none</additionalparam>
+                         </configuration>-->
                     </execution>
                 </executions>
             </plugin>

@@ -6,9 +6,9 @@ package com.tangjianghua.tencentlvb.live.enums;
 
 /**
  * 腾讯云直播回调事件枚举
- * @author: tangjianghua
- * @date: 2020/2/23
- * @time: 20:13
+ * @author tangjianghua
+ * date 2020/2/23
+ * time 20:13
  */
 public enum EventTypeEnum {
 

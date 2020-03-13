@@ -9,9 +9,9 @@ package com.tangjianghua.tencentlvb.live.enums;
  * 0： 普通直播，
  * 1 ：慢直播 。
  * 默认值： 0。
- * @author: tangjianghua
- * @date: 2020/2/21
- * @time: 14:58
+ * @author tangjianghua
+ * date 2020/2/21
+ * time 14:58
  */
 public enum IsDelayLiveEnum {
 

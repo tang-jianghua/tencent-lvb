@@ -13,9 +13,9 @@ import com.tencentcloudapi.live.v20180801.models.DescribeLiveStreamStateRequest;
 import com.tencentcloudapi.live.v20180801.models.DescribeLiveStreamStateResponse;
 
 /**
- * @author: tangjianghua
- * @date: 2020/2/21
- * @time: 14:29
+ * @author tangjianghua
+ * date 2020/2/21
+ * time 14:29
  */
 public class TencentLvbLiveClient {
 
@@ -44,13 +44,13 @@ public class TencentLvbLiveClient {
 
     /**
      * 添加域名
-     * @param: domainName 域名 必填
-     * @param: domainTypeEnum 域名类型 必填
-     * @param: playTypeEnum 拉流域名类型 默认国内
-     * @param: isDelayLiveEnum 是否是慢直播 默认否
-     * @return: AddLiveDomainResponse
-     * @author: tangjianghua
-     * @date: 2020/2/21
+     * @param domainName 域名 必填
+     * @param domainTypeEnum 域名类型 必填
+     * @param playTypeEnum 拉流域名类型 默认国内
+     * @param isDelayLiveEnum 是否是慢直播 默认否
+     * @return AddLiveDomainResponse
+     * @author tangjianghua
+     * date 2020/2/21
      */
     public AddLiveDomainResponse addRealmName(String domainName, DomainTypeEnum domainTypeEnum, PlayTypeEnum playTypeEnum, IsDelayLiveEnum isDelayLiveEnum) {
         try {
@@ -72,12 +72,12 @@ public class TencentLvbLiveClient {
 
     /**
      * 添加普通(非慢直播)直播域名
-     * @param: domainName 域名 必填
-     * @param: domainTypeEnum 域名类型 必填
-     * @param: playTypeEnum 拉流域名类型 默认国内
-     * @return: AddLiveDomainResponse
-     * @author: tangjianghua
-     * @date: 2020/2/21
+     * @param domainName 域名 必填
+     * @param domainTypeEnum 域名类型 必填
+     * @param playTypeEnum 拉流域名类型 默认国内
+     * @return AddLiveDomainResponse
+     * @author tangjianghua
+     * date 2020/2/21
      */
     public AddLiveDomainResponse addRealmName(String domainName, DomainTypeEnum domainTypeEnum, PlayTypeEnum playTypeEnum) {
         try {
@@ -96,12 +96,11 @@ public class TencentLvbLiveClient {
 
     /**
      * 添加国内普通(非慢直播)直播域名
-     * @param: domainName 域名 必填
-     * @param: domainTypeEnum 域名类型 必填
-     * @param: playTypeEnum 拉流域名类型
-     * @return: AddLiveDomainResponse
-     * @author: tangjianghua
-     * @date: 2020/2/21
+     * @param domainName 域名 必填
+     * @param domainTypeEnum 域名类型 必填
+     * @return AddLiveDomainResponse
+     * @author tangjianghua
+     * date 2020/2/21
      */
     public AddLiveDomainResponse addRealmName(String domainName, DomainTypeEnum domainTypeEnum) {
         try {
@@ -118,12 +117,12 @@ public class TencentLvbLiveClient {
 
     /**
      * 查询流状态
-     * @param: pushDomain
-     * @param: appName
-     * @param: streamName
-     * @return: DescribeLiveStreamStateResponse
-     * @author: tangjianghua
-     * @date: 2020/2/23
+     * @param domain 域名
+     * @param appName 应用名称
+     * @param streamName 流名称
+     * @return DescribeLiveStreamStateResponse
+     * @author tangjianghua
+     * date 2020/2/23
      */
     public DescribeLiveStreamStateResponse describeLiveStreamState(String domain, String appName, String streamName){
         try {

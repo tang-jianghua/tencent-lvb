@@ -9,9 +9,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * @author: tangjianghua
- * @date: 2020/2/22
- * @time: 16:07
+ * @author tangjianghua
+ * date 2020/2/22
+ * time 16:07
  */
 public class TencentLvbLiveUrlGenerator {
 
@@ -58,14 +58,14 @@ public class TencentLvbLiveUrlGenerator {
 
     /**
      * 生成rtmp推流地址
-     * @param: domain 推流域名
-     * @param: key 鉴权key
-     * @param: appName
-     * @param: streamName 流名称
-     * @param: txTime 过期时间戳
-     * @return: String
-     * @author: tangjianghua
-     * @date: 2020/2/22
+     * @param domain 推流域名
+     * @param key 鉴权key
+     * @param appName 应用名称
+     * @param streamName 流名称
+     * @param txTime 过期时间戳
+     * @return String
+     * @author tangjianghua
+     * date 2020/2/22
      */
     public static String generaterPushRTMPUrl(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("rtmp://");
@@ -80,14 +80,14 @@ public class TencentLvbLiveUrlGenerator {
     }
     /**
      * 生成flv推流地址
-     * @param: domain 推流域名
-     * @param: key 鉴权key
-     * @param: appName
-     * @param: streamName 流名称
-     * @param: txTime 过期时间戳
-     * @return: String
-     * @author: tangjianghua
-     * @date: 2020/2/22
+     * @param domain 推流域名
+     * @param key 鉴权key
+     * @param appName 应用名称
+     * @param streamName 流名称
+     * @param txTime 过期时间戳
+     * @return String
+     * @author tangjianghua
+     * date 2020/2/22
      */
     public static String generaterPushFLVUrl(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("http://");
@@ -102,14 +102,14 @@ public class TencentLvbLiveUrlGenerator {
     }
     /**
      * 生成m3u8推流地址
-     * @param: domain 推流域名
-     * @param: key 鉴权key
-     * @param: appName
-     * @param: streamName 流名称
-     * @param: txTime 过期时间戳
-     * @return: String
-     * @author: tangjianghua
-     * @date: 2020/2/22
+     * @param domain 推流域名
+     * @param key 鉴权key
+     * @param appName 应用名称
+     * @param streamName 流名称
+     * @param txTime 过期时间戳
+     * @return String
+     * @author tangjianghua
+     * date 2020/2/22
      */
     public static String generaterPushM3U8Url(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("http://");
@@ -125,14 +125,14 @@ public class TencentLvbLiveUrlGenerator {
 
     /**
      * 生成rtmp播放地址
-     * @param: domain 播放域名
-     * @param: key 鉴权key
-     * @param: appName
-     * @param: streamName 流名称
-     * @param: txTime 过期时间戳
-     * @return: String
-     * @author: tangjianghua
-     * @date: 2020/2/22
+     * @param domain 播放域名
+     * @param key 鉴权key
+     * @param appName 应用名称
+     * @param streamName 流名称
+     * @param txTime 过期时间戳
+     * @return String
+     * @author tangjianghua
+     * date 2020/2/22
      */
     public static String generaterPlayRTMPUrl(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("rtmp://");
@@ -148,14 +148,14 @@ public class TencentLvbLiveUrlGenerator {
 
     /**
      * 生成flv播放地址
-     * @param: domain 播放域名
-     * @param: key 鉴权key
-     * @param: appName
-     * @param: streamName 流名称
-     * @param: txTime 过期时间戳
-     * @return: String
-     * @author: tangjianghua
-     * @date: 2020/2/22
+     * @param domain 播放域名
+     * @param key 鉴权key
+     * @param appName 应用名称
+     * @param streamName 流名称
+     * @param txTime 过期时间戳
+     * @return String
+     * @author tangjianghua
+     * date 2020/2/22
      */
     public static String generaterPlayFLVUrl(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("http://");
@@ -171,14 +171,14 @@ public class TencentLvbLiveUrlGenerator {
 
     /**
      * 生成m3u8播放地址
-     * @param: domain 播放域名
-     * @param: key 鉴权key
-     * @param: appName
-     * @param: streamName 流名称
-     * @param: txTime 过期时间戳
-     * @return: String
-     * @author: tangjianghua
-     * @date: 2020/2/22
+     * @param domain 播放域名
+     * @param key 鉴权key
+     * @param appName 应用名称
+     * @param streamName 流名称
+     * @param txTime 过期时间戳
+     * @return String
+     * @author tangjianghua
+     * date 2020/2/22
      */
     public static String generaterPlayM3U8Url(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("http://");
