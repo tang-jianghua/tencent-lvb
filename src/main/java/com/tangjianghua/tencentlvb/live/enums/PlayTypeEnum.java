@@ -10,9 +10,9 @@ package com.tangjianghua.tencentlvb.live.enums;
  * 2：全球，
  * 3：境外。
  * 默认值：1。
- * @author tangjianghua
- * @date 2020/2/21
- * @time 14:53
+ * @author: tangjianghua
+ * @date: 2020/2/21
+ * @time: 14:53
  */
 public enum PlayTypeEnum {
     //国内

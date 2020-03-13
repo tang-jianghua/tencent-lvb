@@ -9,9 +9,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * @author tangjianghua
- * @date 2020/2/22
- * @time 16:07
+ * @author: tangjianghua
+ * @date: 2020/2/22
+ * @time: 16:07
  */
 public class TencentLvbLiveUrlGenerator {
 
@@ -63,10 +63,9 @@ public class TencentLvbLiveUrlGenerator {
      * @param: appName
      * @param: streamName 流名称
      * @param: txTime 过期时间戳
-     * @return
-     * @exception 
+     * @return: String
      * @author: tangjianghua
-     * @date 2020/2/22
+     * @date: 2020/2/22
      */
     public static String generaterPushRTMPUrl(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("rtmp://");
@@ -86,10 +85,9 @@ public class TencentLvbLiveUrlGenerator {
      * @param: appName
      * @param: streamName 流名称
      * @param: txTime 过期时间戳
-     * @return
-     * @exception
+     * @return: String
      * @author: tangjianghua
-     * @date 2020/2/22
+     * @date: 2020/2/22
      */
     public static String generaterPushFLVUrl(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("http://");
@@ -109,10 +107,9 @@ public class TencentLvbLiveUrlGenerator {
      * @param: appName
      * @param: streamName 流名称
      * @param: txTime 过期时间戳
-     * @return
-     * @exception
+     * @return: String
      * @author: tangjianghua
-     * @date 2020/2/22
+     * @date: 2020/2/22
      */
     public static String generaterPushM3U8Url(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("http://");
@@ -133,10 +130,9 @@ public class TencentLvbLiveUrlGenerator {
      * @param: appName
      * @param: streamName 流名称
      * @param: txTime 过期时间戳
-     * @return
-     * @exception
+     * @return: String
      * @author: tangjianghua
-     * @date 2020/2/22
+     * @date: 2020/2/22
      */
     public static String generaterPlayRTMPUrl(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("rtmp://");
@@ -157,10 +153,9 @@ public class TencentLvbLiveUrlGenerator {
      * @param: appName
      * @param: streamName 流名称
      * @param: txTime 过期时间戳
-     * @return
-     * @exception
+     * @return: String
      * @author: tangjianghua
-     * @date 2020/2/22
+     * @date: 2020/2/22
      */
     public static String generaterPlayFLVUrl(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("http://");
@@ -181,10 +176,9 @@ public class TencentLvbLiveUrlGenerator {
      * @param: appName
      * @param: streamName 流名称
      * @param: txTime 过期时间戳
-     * @return
-     * @exception
+     * @return: String
      * @author: tangjianghua
-     * @date 2020/2/22
+     * @date: 2020/2/22
      */
     public static String generaterPlayM3U8Url(String domain, String key, String appName, String streamName, long txTime) {
         StringBuilder url = new StringBuilder("http://");

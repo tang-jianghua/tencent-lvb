@@ -13,9 +13,9 @@ import com.tencentcloudapi.live.v20180801.models.DescribeLiveStreamStateRequest;
 import com.tencentcloudapi.live.v20180801.models.DescribeLiveStreamStateResponse;
 
 /**
- * @author tangjianghua
- * @date 2020/2/21
- * @time 14:29
+ * @author: tangjianghua
+ * @date: 2020/2/21
+ * @time: 14:29
  */
 public class TencentLvbLiveClient {
 
@@ -48,10 +48,9 @@ public class TencentLvbLiveClient {
      * @param: domainTypeEnum 域名类型 必填
      * @param: playTypeEnum 拉流域名类型 默认国内
      * @param: isDelayLiveEnum 是否是慢直播 默认否
-     * @return AddLiveDomainResponse
-     * @exception 
+     * @return: AddLiveDomainResponse
      * @author: tangjianghua
-     * @date 2020/2/21
+     * @date: 2020/2/21
      */
     public AddLiveDomainResponse addRealmName(String domainName, DomainTypeEnum domainTypeEnum, PlayTypeEnum playTypeEnum, IsDelayLiveEnum isDelayLiveEnum) {
         try {
@@ -76,10 +75,9 @@ public class TencentLvbLiveClient {
      * @param: domainName 域名 必填
      * @param: domainTypeEnum 域名类型 必填
      * @param: playTypeEnum 拉流域名类型 默认国内
-     * @return AddLiveDomainResponse
-     * @exception
+     * @return: AddLiveDomainResponse
      * @author: tangjianghua
-     * @date 2020/2/21
+     * @date: 2020/2/21
      */
     public AddLiveDomainResponse addRealmName(String domainName, DomainTypeEnum domainTypeEnum, PlayTypeEnum playTypeEnum) {
         try {
@@ -101,10 +99,9 @@ public class TencentLvbLiveClient {
      * @param: domainName 域名 必填
      * @param: domainTypeEnum 域名类型 必填
      * @param: playTypeEnum 拉流域名类型
-     * @return AddLiveDomainResponse
-     * @exception
+     * @return: AddLiveDomainResponse
      * @author: tangjianghua
-     * @date 2020/2/21
+     * @date: 2020/2/21
      */
     public AddLiveDomainResponse addRealmName(String domainName, DomainTypeEnum domainTypeEnum) {
         try {
@@ -124,10 +121,9 @@ public class TencentLvbLiveClient {
      * @param: pushDomain
      * @param: appName
      * @param: streamName
-     * @return
-     * @exception 
+     * @return: DescribeLiveStreamStateResponse
      * @author: tangjianghua
-     * @date 2020/2/23
+     * @date: 2020/2/23
      */
     public DescribeLiveStreamStateResponse describeLiveStreamState(String domain, String appName, String streamName){
         try {
