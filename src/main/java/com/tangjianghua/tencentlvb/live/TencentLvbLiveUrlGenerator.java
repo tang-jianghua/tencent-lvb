@@ -4,6 +4,8 @@
 
 package com.tangjianghua.tencentlvb.live;
 
+import com.tangjianghua.tencentlvb.live.utils.MD5Utils;
+
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -25,16 +27,7 @@ public class TencentLvbLiveUrlGenerator {
                 append(streamName).
                 append(Long.toHexString(txTime).toUpperCase()).toString();
 
-        String txSecret = null;
-        try {
-            MessageDigest messageDigest = MessageDigest.getInstance("MD5");
-            txSecret = byteArrayToHexString(
-                    messageDigest.digest(input.getBytes("UTF-8")));
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+        String txSecret = MD5Utils.md5(input);
 
         return txSecret == null ? "" :
                 new StringBuilder().
